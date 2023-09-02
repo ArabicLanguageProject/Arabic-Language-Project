@@ -1,0 +1,432 @@
+<html>
+	<head>
+	<meta http-equiv="text/javascript" content="text/html;charset=UTF-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+	<style>
+		@font-face {
+  			font-family: Lato;
+ 			font-style: normal;
+  			font-weight: 400;
+  			src: local("Lato"), url("https://mdn.github.io/web-fonts/LatoReg.ttf");
+		}
+
+		.Header {
+			
+			width: 100%;
+			height: 50px;
+			border-bottom: 1px solid grey;
+			box-shadow: 0px 2px 3px grey;
+			background-color: rgb(230, 237, 250);
+			
+		}
+		body {
+			margin: 0px;
+			overflow-y: scroll;
+			background-image:url('https://thumbs.dreamstime.com/b/arabic-alphabet-texture-background-high-resolution-38458351.jpg');
+		}
+		h1 {
+			font-family: 'Trirong', serif;
+			font-size: 25px;
+			
+		}
+		.C1 {
+			padding-left: 5px;
+			float: left;
+			display: inline-block;
+			width: 45%;
+			margin-top:-10px;
+		}
+		.C2 {
+			float: right;
+			display: inline-block;
+			width: 45%;
+			margin-top:-10px;
+		}
+		.ButtonStuff {
+			background-color:black;
+			height:50px;
+		}
+		.HeaderButton {
+			height:100%;
+			
+			width:100%;
+			background-color:black;
+			color: red;
+			font-family:"Open Sans", sans-serif;
+			font-size:30px;
+			border:none;
+			display:inline-block;
+		}
+		.HeaderButton: hover {
+			background-color:rgba(36, 43, 43);
+			
+		}
+		.dropdown {
+			width:50%;
+			display: inline-block;
+			position: relative;
+			margin-top:-12px;
+
+		}
+		.dropdown-content {
+			display:none;
+  			position: absolute;
+  			background-color: #f1f1f1;
+ 			min-width: 160px;
+ 			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  			z-index: 1;
+			width:100%;
+		}
+		.dropdown a {
+			color: black;
+  			padding: 12px 16px;
+ 			text-decoration: none;
+  			display: block;
+			font-family:"Open Sans", sans-serif;
+			
+		}
+		.center {
+			width: 75%;
+			margin: auto;
+			background-color:rgba(225, 225, 225, 1);
+			overflow-x: hidden;
+			white-space: initial;
+			padding: 10px;
+			font-family: "Open Sans", sans-serif;
+			margin-top: 12px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		}
+
+		/* Change color of dropdown links on hover */
+		.dropdown-content a:hover {background-color: #ddd;}
+
+		/* Show the dropdown menu on hover */
+		.dropdown:hover .dropdown-content {display: block;}
+
+		/* Change the background color of the dropdown button when the dropdown content is shown */
+		.frames {
+			position: relative;
+			width:65%;
+			margin:auto;
+			display: block;
+			height: 400px;
+		}
+		.otherDivs {
+			display: none;
+		}
+		.arabicC {
+			font-size: 25px;
+		}
+		
+	</style>
+	</head>
+	<body>
+	<div id="English">
+		<div class="Header" style="clear: both">
+			<div class="C1"><h1>Arabic Language Project</h1></div>
+			<div class="C2"><h1 dir="rtl" lang="ar" >مشروع اللغة العربية</h1></div>			
+		</div>
+		<div class="ButtonStuff">
+			<div class="dropdown">
+  				<button class="dropbtn HeaderButton">Lessons</button>
+  			<div class="dropdown-content">
+    				<a onclick="openBodyDivEnglish(0);">Overview</a>
+    				<a onclick="openBodyDivEnglish(1);">Basic Sentence Structure</a>
+  			 	<a onclick="openBodyDivEnglish(2);">Using <span dir="rtl" lang="ar"> إنَّ</span></a>
+				<a onclick="openBodyDivEnglish(3);">Verb Inflections</a>
+    				<a onclick="openBodyDivEnglish(4);">Asking Yes or No Questions</a>
+  			 	<a onclick="openBodyDivEnglish(5);">Comparative and Superlative Degrees</a>
+  			</div>
+			</div>
+			<div class="dropdown" style="width:50%; float:right; margin-top:-12px;">
+  				<button class="dropbtn HeaderButton">Language</button>
+  			<div class="dropdown-content">
+    				<a href="#" onclick = "openEnglish();">English</a>
+    				<a href="#" onclick = "openArabic();">Arabic</a>
+  			 	
+  			</div>
+			</div>
+			
+			
+		</div>
+		<div class="center">
+			<div id="overview1">
+				<h2>Overview</h2>
+				<p>Our website seeks to explain some of the basic to intermediate Arabic grammar rules. <br>
+				This information is split into a five-part series with each discussing a new grammatical feature to 				help you grasp the basics of forming Arabic sentences: <br><br> 
+				<ul><li>Part 1: Basic Sentence Structure</li> <br>
+				<li>Part 2: Adding emphasis using إنَّ</li> <br>
+				<li>Part 3: Verb Inflections</li> <br>
+				<li>Part 4: Asking yes or no questions</li> <br>
+				<li>Part 5: Comparative and Superlative Degrees of Adjectives</li> <br></ul>
+				Inshallah, by the end of the series, you should have a better understanding of the language.
+				
+				</p>
+			</div>
+			<div id="lesson11" class="otherDivs">
+				<h2>Part 1: Basic Sentence Structure</h2>
+				<iframe class="frames"></iframe><br>
+				<h2>Exercises</h2>
+				<h2>Determine the verb, subject and object in each of the following sentences:</h2>
+				<span dir="rtl" lang="ar" class="arabicC">
+				<ul><li>ذهب إبراهيم الى البيت.</li> <br>
+				<li>يقود السائق سيارته.</li> <br>
+				<li>أنا رجعت من المدرسة.</li> <br></ul></span>
+				<h2>Determine the mubtada' and khabar in each of the following sentences:</h2>
+				<span dir="rtl" lang="ar" class="arabicC">
+				<ul><li> إبراهيم طويل.</li> <br>
+				<li>أحمد طالب.</li> <br></ul></span>
+			</div>
+			<div id="lesson21" class="otherDivs">
+				<h2>Part 2: Adding emphasis using إنَّ</h2>
+				<iframe class="frames"></iframe><br>
+				<h2>Exercises</h2>
+				<h2>Add إنَّ in front of the following sentences:</h2>
+				<span dir="rtl" lang="ar" class="arabicC">
+				<ul><li>ذهب إبراهيم الى البيت.</li> <br>
+				<li>لعبوا مع الكرة.</li> <br>
+				<li>أنتَ صغير.</li> <br>
+				<li>أنا رجعتُ من المدرسة.</li> <br></ul></span>
+			</div>
+			<div id="lesson31" class="otherDivs">
+				<h2>Part 3: Verb Inflections</h2>
+				<iframe class="frames"></iframe><br>
+				<h2>Exercises</h2>
+				<h2>Fix the following sentences so that they are grammatically correct.</h2>
+				<span dir="rtl" lang="ar" class="arabicC">
+				<ul><li>ذهبتَ إبراهيم الى البيت.</li> <br>
+				<li>لعبوا محمد مع الكرة.</li> <br>
+				<li>أنا رجعتْ من المدرسة.</li> <br></ul></span>
+			</div>
+			
+			<div id="lesson41" class="otherDivs">
+				<h2>Part 4: Asking Yes or No Questions</h2>
+				<iframe class="frames"></iframe><br>
+				<h2>Exercises</h2>
+				<h2>Answer the following questions, making sure to write at least one sentence with 'نعم' and 'لا.'</h2>
+				<span dir="rtl" lang="ar" class="arabicC">
+				<ul><li>أذهبتَ الى البيت يا إبراهيم؟</li> <br>
+				<li>ألعب محمد مع الكرة؟</li> <br>
+				<li> أرجعتم من المدرسة؟</li> <br></ul></span>
+				<h2>Answer the following negative questions, making sure to write at least one sentence with 'بلى' or 'نعم.' </h2>
+				<span dir="rtl" lang="ar" class="arabicC">
+				<ul><li>أما ذهبتَ الى البيت يا إبراهيم؟</li> <br>
+				<li>أما لعب محمد مع الكرة؟</li> <br>
+				<li> أما رجعتم من المدرسة؟</li> <br></ul></span>
+			</div>
+			<div id="lesson51" class="otherDivs">
+				<h2>Part 5: Comparative and Superlative Degrees of Adjectives</h2>
+				<iframe class="frames"></iframe><br>
+				<h2>Exercises</h2>
+				<h2>Form a sentence using the words presented, changing the adjective to its superlative or comparative form depending on the circumstance.</h2>
+				<span dir="rtl" lang="ar" class="arabicC">
+				<ul><li>عليّ / كبير / حامد</li> <br>
+				<li> القاهرة / قريب / الرياض</li> <br>
+				<li> طوكيو / مدينة / كبير / العالم</li> <br>
+				<li>أنا / صغير / هو </li> <br>
+				<li>هذه / حديقة / جميل / مدينتي</li> <br>
+				<li>هذا / درس / سهل / الكتاب</li> <br></ul></span>
+			</div>
+		</div>
+		
+	</div>
+	<div id="Arabic" style="display: none">
+		<div class="Header" style="clear: both">
+			<div class="C1"><h1>Arabic Language Project</h1></div>
+			<div class="C2"><h1 dir="rtl" lang="ar" >مشروع اللغة العربية</h1></div>			
+		</div>
+		<div class="ButtonStuff" dir="rtl" lang="ar">
+			<div class="dropdown">
+  				<button class="dropbtn HeaderButton">الدروس</button>
+  			<div class="dropdown-content">
+    				<a onclick="openBodyDivArabic(0);">ملخص</a>
+    				<a onclick="openBodyDivArabic(1);">بنية الجملة</a>
+  			 	<a onclick="openBodyDivArabic(2);">باستخدم "إنَّ"     </a>
+				<a onclick="openBodyDivArabic(3);">تصريفات الفعل</a>
+    				<a onclick="openBodyDivArabic(4);">طرح أسئلة بنعم أم لا</a>
+  			 	<a onclick="openBodyDivArabic(5);">أَفْعَلُ التَّفضيل</a>
+  			</div>
+			</div>
+			<div class="dropdown" style="width:50%; float:right; margin-top:-12px;">
+  				<button class="dropbtn HeaderButton">لغة</button>
+  			<div class="dropdown-content">
+    				<a href="#" onclick = "openEnglish();">اللغة الإنكليزية</a>
+    				<a href="#" onclick = "openArabic();">اللغة العربية</a>
+  			 	
+  			</div>
+			</div>
+			
+		</div>
+		<div class="center" dir="rtl" lang="ar" style="font-size: 25px;">
+			<div id="overview2" >
+				<h2>مخلص</h2>
+				<p>يسعى موقعنا إلى شرح بعض قواعد النحو العربي الأساسية والمتوسطة. <br>
+تنقسم هذه المعلومات إلى سلسلة من خمسة أجزاء، يناقش كل منها ميزة نحوية جديدة لمساعدتك على فهم أساسيات تكوين الجمل العربية:
+<br><br> 
+				<ul><li> 
+  مقطع الاول: بنية الجملة
+</li> <br>
+				<li> مقطع الثاني: باستخدم "إنَّ" </li> <br>
+				<li>    مقطع الثالث: تصريفات الفعل</li> <br>
+				<li> مقطع الرابع: طرح أسئلة بنعم أم لا </li> <br>
+				<li> مقطع الخامس: أَفْعَلُ التَّفضيل</li> <br></ul>
+				إن شاء الله، بحلول نهاية السلسلة، من المفترض أن تتوصل إلى فهم أفضل للغة.
+				
+				</p>
+			</div>
+			<div id="lesson12" class="otherDivs">
+				<h2>مقطع الاول: بنية الجملة</h2>
+				<iframe class="frames"></iframe><br>
+				<h2>تمارين</h2>
+				<h2>حدد الفعل والفاعل والمفعول به في كل من الجمل التالية:</h2>
+				<span dir="rtl" lang="ar" class="arabicC">
+				<ul><li>ذهب إبراهيم الى البيت.</li> <br>
+				<li>يقود السائق سيارته.</li> <br>
+				<li>أنا رجعت من المدرسة.</li> <br></ul></span>
+							<h2>حدد المبتدأ والخبر في كل من الجمل الآتية:</h2>
+				<span dir="rtl" lang="ar" class="arabicC">
+				<ul><li> إبراهيم طويل.</li> <br>
+				<li>أحمد طالب.</li> <br></ul></span>
+			</div>
+			<div id="lesson22" class="otherDivs">
+				<h2> مقطع الثاني: باستخدم "إنَّ" </h2>
+				<iframe class="frames"></iframe><br>
+				<h2>تمارين</h2>
+				<h2>أضف إنَّ قبل الجمل التالية:</h2>
+				<span dir="rtl" lang="ar" class="arabicC">
+				<ul><li>ذهب إبراهيم الى البيت.</li> <br>
+				<li>لعبوا مع الكرة.</li> <br>
+				<li>أنتَ صغير.</li> <br>
+				<li>أنا رجعتُ من المدرسة.</li> <br></ul></span>
+			</div>
+			<div id="lesson32" class="otherDivs">
+				<h2>مقطع الثالث: تصريفات الفعل</h2>
+				<iframe class="frames"></iframe><br>
+				<h2>تمارين</h2>
+				<h2>أصلح الجمل التالية بحيث تكون صحيحة نحويا.</h2>
+				<span dir="rtl" lang="ar" class="arabicC">
+				<ul><li>ذهبتَ إبراهيم الى البيت.</li> <br>
+				<li>لعبوا محمد مع الكرة.</li> <br>
+				<li>أنا رجعتْ من المدرسة.</li> <br></ul></span>
+			</div>
+			<div id="lesson42" class="otherDivs">
+					<h2>مقطع الرابع: طرح أسئلة بنعم أم لا</h2>
+				<iframe class="frames"></iframe><br>
+				<h2>تمارين</h2>
+				<h2>أجب عن الأسئلة التالية، وتأكد من كتابة جملة واحدة على الأقل تحتوي على "نعم" و"لا".</h2>
+				<span dir="rtl" lang="ar" class="arabicC">
+				<ul><li>أذهبتَ الى البيت يا إبراهيم؟</li> <br>
+				<li>ألعب محمد مع الكرة؟</li> <br>
+				<li> أرجعتم من المدرسة؟</li> <br></ul></span>
+				<h2>أجب عن الأسئلة السلبية التالية، مع التأكد من كتابة جملة واحدة على الأقل بـ "بلى" أو "نعم". </h2>
+				<span dir="rtl" lang="ar" class="arabicC">
+				<ul><li>أما ذهبتَ الى البيت يا إبراهيم؟</li> <br>
+				<li>أما لعب محمد مع الكرة؟</li> <br>
+				<li> أما رجعتم من المدرسة؟</li> <br></ul></span>
+			</div>
+			<div id="lesson52" class="otherDivs">
+				<h2>مقطع الخامس: أَفْعَلُ التَّفضيل</h2>
+				<iframe class="frames"></iframe><br>
+				<h2>تمارين</h2>
+				<h2>قم بتكوين جملة باستخدام الكلمات المقدمة باستخدام "أَفْعَلُ التَفضيل".</h2>
+				<span dir="rtl" lang="ar" class="arabicC">
+				<ul><li>عليّ / كبير / حامد</li> <br>
+				<li> القاهرة / قريب / الرياض</li> <br>
+				<li> طوكيو / مدينة / كبير / العالم</li> <br>
+				<li>أنا / صغير / هو </li> <br>
+				<li>هذه / حديقة / جميل / مدينتي</li> <br>
+				<li>هذا / درس / سهل / الكتاب</li> <br></ul></span>
+
+			</div>
+		</div>
+		
+	</div>
+	</body>
+	<script>
+		function openBodyDivEnglish(myNumber) {
+			const overview = document.getElementById("overview1");
+			const lesson1 = document.getElementById("lesson11");
+			const lesson2 = document.getElementById("lesson21");
+			const lesson3 = document.getElementById("lesson31");
+			const lesson4 = document.getElementById("lesson41");
+			const lesson5 = document.getElementById("lesson51");
+			overview.style.display = 'none';
+			lesson1.style.display = 'none';
+			lesson2.style.display = 'none';
+			lesson3.style.display = 'none';
+			lesson4.style.display = 'none';
+			lesson5.style.display = 'none';
+			if (myNumber === 0) {
+				overview.style.display = 'block';
+			}
+			if (myNumber === 1) {
+				lesson1.style.display = 'block';
+			}
+			if (myNumber === 2) {
+				lesson2.style.display = 'block';
+			}
+			if (myNumber === 3) {
+				lesson3.style.display = 'block';
+			}
+			if (myNumber === 4) {
+				lesson4.style.display = 'block';
+			}
+			if (myNumber === 5) {
+				lesson5.style.display = 'block';
+			}
+		}
+		function openBodyDivArabic(myNumber) {
+			overview = document.getElementById("overview2");
+			lesson1 = document.getElementById("lesson12");
+			lesson2 = document.getElementById("lesson22");
+			lesson3 = document.getElementById("lesson32");
+			lesson4 = document.getElementById("lesson42");
+			lesson5 = document.getElementById("lesson52");
+			overview.style.display = 'none';
+			lesson1.style.display = 'none';
+			lesson2.style.display = 'none';
+			lesson3.style.display = 'none';
+			lesson4.style.display = 'none';
+			lesson5.style.display = 'none';
+			if (myNumber === 0) {
+				overview.style.display = 'block';
+			}
+			if (myNumber === 1) {
+				lesson1.style.display = 'block';
+			}
+			if (myNumber === 2) {
+				lesson2.style.display = 'block';
+			}
+			if (myNumber === 3) {
+				lesson3.style.display = 'block';
+			}
+			if (myNumber === 4) {
+				lesson4.style.display = 'block';
+			}
+			if (myNumber === 5) {
+				lesson5.style.display = 'block';
+			}
+		}
+		function openEnglish() {
+			
+
+			document.getElementById("English").style.display = 'block'; 
+			document.getElementById("Arabic").style.display = 'none';
+			openBodyDivEnglish(0);
+			console.log("worked");
+			
+		}
+		function openArabic() {
+			
+			document.getElementById("English").style.display = 'none'; 
+			document.getElementById("Arabic").style.display = 'block';
+			openBodyDivArabic(0);
+			console.log("worked1");
+			
+     		}
+		
+	</script>
+</html>
